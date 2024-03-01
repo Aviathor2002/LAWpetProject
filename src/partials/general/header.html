@@ -1,9 +1,30 @@
-<header>
-  <ul>
-    <li><a href="./index.html">Главная</a></li>
-    <li><a href="./index2.html">Кто мы</a></li>
-    <li><a href="">Что мы делаем</a></li>
-    <li><a href="">Проекты</a></li>
-    <li><a href="">Контакты</a></li>
-  </ul>
+<header class="header">
+  <div class="header-conteiner">
+    <div class="menu">
+      <a href="./index.html"
+        ><img class="logo" src="./images/logo.png" alt="logo"
+      /></a>
+
+      <button type="button" class="header--open">
+        <svg class="header__icon--open" width="40" height="40">
+          <use href="./images/svg/menu.svg"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <button type="button" class="header--close">
+          <svg class="header__icon--close" width="31" height="31">
+            <use href="./images/svg/close.svg"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a href="./index.html">Главная</a></li>
+          <li class="mobile-menu__item"><a href="./index2.html">Кто мы</a></li>
+          <li class="mobile-menu__item"><a href="">Что мы делаем</a></li>
+          <li class="mobile-menu__item"><a href="">Проекты</a></li>
+          <li class="mobile-menu__item"><a href="">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>
+<script src="./js/mobile-menu.js"></script>

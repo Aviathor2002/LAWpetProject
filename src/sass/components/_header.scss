@@ -1,0 +1,21 @@
+.header {
+}
+
+.logo {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+
+  z-index: 2;
+}
+
+.header--open {
+  position: absolute;
+  top: 16;
+  right: 12;
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
