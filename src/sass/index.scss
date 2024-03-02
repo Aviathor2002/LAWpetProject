@@ -1,8 +1,9 @@
+@import './utils/viewpot-size';
+
 @import './common';
 @import './example';
 @import './base/general';
-
-@import './utils/viewpot-size';
+@import './base/container';
 
 @import './components/header';
 @import './components/header-menu';
