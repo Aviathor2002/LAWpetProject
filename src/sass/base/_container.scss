@@ -1,7 +1,22 @@
 .container {
-  width: 100%;
+  // width: 100%;
+  max-width: 1950px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.background-container {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+  @include for-size(mobile-only) {
+    background-image: url(../images/bacgroung_header-mob.png);
+  }
+
+  @include for-size(tablet) {
+    background-image: url(../images/bacgroung_header.png);
+  }
 }

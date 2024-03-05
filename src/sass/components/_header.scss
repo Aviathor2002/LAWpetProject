@@ -1,3 +1,7 @@
+.header-container {
+  height: 85px;
+}
+
 .logo {
   @include for-size(mobile-only) {
     position: absolute;
@@ -15,12 +19,15 @@
   top: 16;
   right: 12;
 
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
+  transition: all 250ms $cubic-bezier;
+
   &:hover {
-    fill: #ffc158;
+    transform: scale(1.2);
+    fill: $primary-white-color;
   }
   @include for-size(tablet) {
     display: none;
