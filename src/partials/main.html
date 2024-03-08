@@ -56,35 +56,55 @@
         </div>
       </li>
     </ul>
-    <div>
-      <h2>Получи помощь полностью бесплатно за три шага!</h2>
-      <ul>
-        <li>
-          <div>
-            <p>1 ШАГ</p>
-            <img src="./images/step1.png" alt="note" />
-            <p>
-              Если Ты не хочешь тратить сотни и даже тысячи евро на консультацию
-              адвоката, нажми здесь и заполни форму.
-            </p>
-            <button>Оставить заявку</button>
+    <div class="help-container container">
+      <h2 class="help-title">Получи помощь полностью бесплатно за три шага!</h2>
+      <ul class="help-list">
+        <li class="help-item">
+          <div class="help-item__block">
+            <div class="help-item__step-block">
+              <div class="help-item__step">
+                <p class="help-item__step-text">1 ШАГ</p>
+              </div>
+              <img
+                class="help-item__img"
+                srcset="./images/step1.png 1x, ./images/step1@2.png 2x"
+                sizes="(min-width: 100px) 200px, (min-width: 768px) 430px"
+                src="./images/step1.png"
+                alt="note"
+              />
+            </div>
+            <div class="help-btn-block">
+              <p class="help-item__text">
+                Если Ты не хочешь тратить сотни и даже тысячи евро на
+                консультацию адвоката, нажми здесь и заполни форму.
+              </p>
+              <button class="help-btn">Оставить заявку</button>
+            </div>
           </div>
         </li>
-        <li>
-          <div>
-            <p>2 ШАГ</p>
-            <img src="./images/step2.png" alt="team" />
-            <p>
+        <li class="help-item">
+          <div class="help-item__block">
+            <div class="help-item__step-block">
+              <div class="help-item__step">
+                <p class="help-item__step-text">2 ШАГ</p>
+              </div>
+              <img class="help-item__img" src="./images/step2.png" alt="team" />
+            </div>
+            <p class="help-item__text">
               Наша команда рассмотрит предоставленную информацию в течение 3
               дней и сообщит о дальнейших действиях.
             </p>
           </div>
         </li>
-        <li>
-          <div>
-            <p>3 ШАГ</p>
-            <img src="./images/step3.png" alt="help" />
-            <p>
+        <li class="help-item">
+          <div class="help-item__block">
+            <div class="help-item__step-block">
+              <div class="help-item__step">
+                <p class="help-item__step-text">3 ШАГ</p>
+              </div>
+              <img class="help-item__img" src="./images/step3.png" alt="help" />
+            </div>
+            <p class="help-item__text">
               В тесном сотрудничестве с Тобой наша команда решает проблемную
               ситуацию.
             </p>

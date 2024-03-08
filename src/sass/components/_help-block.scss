@@ -1,0 +1,156 @@
+.help-container {
+  @include for-size(mobile-only) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+}
+
+.help-title {
+  @include for-size(mobile-only) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.help-list {
+  @include for-size(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.help-item {
+  &:nth-child(2) {
+    @include for-size(mobile-only) {
+      margin-bottom: 50px;
+    }
+    @include for-size(tablet) {
+    }
+  }
+  &:nth-child(2) .help-item__block {
+    @include for-size(tablet) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.help-item__block {
+  @include for-size(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.help-item__step-block {
+  @include for-size(mobile-only) {
+    align-items: center;
+
+    width: 200px;
+
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.help-item__step {
+  position: absolute;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 8px 4px;
+
+  border-radius: 50%;
+  border: 5px solid rgba(255, 193, 88, 1);
+  background-color: $primary-white-color;
+
+  @include for-size(tablet) {
+    width: 100px;
+    height: 100px;
+
+    padding: 24px 19px;
+  }
+}
+
+.help-item__step-text {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  width: 30px;
+  height: 20px;
+
+  @include for-size(tablet) {
+    font-size: 20px;
+    line-height: 22px;
+
+    width: 51px;
+    height: 44px;
+  }
+}
+
+.help-item__img {
+  width: 100%;
+}
+
+.help-item__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  max-width: 400px;
+}
+
+.help-btn-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-btn {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $primary-white-color;
+  border: transparent;
+
+  width: 239px;
+  height: 55px;
+  top: 1952px;
+  left: 68px;
+  border-radius: 50px;
+  background-color: $primary-btn-color;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(mobile-only) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  @include for-size(tablet) {
+    margin-top: 30px;
+  }
+}
