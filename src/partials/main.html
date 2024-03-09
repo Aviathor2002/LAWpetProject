@@ -65,13 +65,23 @@
               <div class="help-item__step">
                 <p class="help-item__step-text">1 ШАГ</p>
               </div>
-              <img
-                class="help-item__img"
-                srcset="./images/step1.png 1x, ./images/step1@2.png 2x"
-                sizes="(min-width: 100px) 200px, (min-width: 768px) 430px"
-                src="./images/step1.png"
-                alt="note"
-              />
+              <picture>
+                <source
+                  srcset="./images/step1.png"
+                  type="image/png"
+                  media="(max-width: 768)"
+                />
+                <source
+                  srcset="./images/step1@2.png"
+                  type="image/png"
+                  media="(max-width: 769)"
+                />
+                <img
+                  class="help-item__img"
+                  src="./images/step1@2.png"
+                  alt="note"
+                />
+              </picture>
             </div>
             <div class="help-btn-block">
               <p class="help-item__text">
@@ -88,7 +98,19 @@
               <div class="help-item__step">
                 <p class="help-item__step-text">2 ШАГ</p>
               </div>
-              <img class="help-item__img" src="./images/step2.png" alt="team" />
+              <picture>
+                <source
+                  srcset="./images/step2.png"
+                  type="image/png"
+                  media="(max-width: 768)"
+                />
+                <source
+                  srcset="./images/step2@2.png"
+                  type="image/png"
+                  media="(max-width: 769)"
+                />
+                <img src="./images/step2@2.png" alt="team" />
+              </picture>
             </div>
             <p class="help-item__text">
               Наша команда рассмотрит предоставленную информацию в течение 3
@@ -102,7 +124,19 @@
               <div class="help-item__step">
                 <p class="help-item__step-text">3 ШАГ</p>
               </div>
-              <img class="help-item__img" src="./images/step3.png" alt="help" />
+              <picture>
+                <source
+                  srcset="./images/step3.png"
+                  type="image/png"
+                  media="(max-width: 768)"
+                />
+                <source
+                  srcset="./images/step3@2.png"
+                  type="image/png"
+                  media="(max-width: 769)"
+                />
+                <img src="./images/step3@2.png" alt="help" />
+              </picture>
             </div>
             <p class="help-item__text">
               В тесном сотрудничестве с Тобой наша команда решает проблемную

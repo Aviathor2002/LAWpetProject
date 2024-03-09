@@ -3,18 +3,35 @@
     padding-top: 80px;
     padding-bottom: 50px;
   }
+  @include for-size(tablet) {
+    padding-top: 80px;
+    padding-bottom: 200px;
+    background-image: url(../images/bg-help.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
+  }
 }
 
 .help-title {
-  @include for-size(mobile-only) {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 25px;
-  }
   font-family: Montserrat;
   font-weight: 800;
   letter-spacing: 0em;
   text-align: center;
+
+  @include for-size(mobile-only) {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-bottom: 25px;
+  }
+
+  @include for-size(tablet) {
+    font-size: 36px;
+    line-height: 50px;
+
+    margin-bottom: 40px;
+  }
 }
 
 .help-list {
@@ -22,6 +39,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @include for-size(tablet) {
+    background-image: url(../images/bg-help-line.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
   }
 }
 
@@ -38,6 +61,9 @@
       flex-direction: row-reverse;
     }
   }
+  &:not(:last-child) {
+    margin-bottom: 65px;
+  }
 }
 
 .help-item__block {
@@ -49,7 +75,7 @@
   @include for-size(tablet) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -82,6 +108,8 @@
     height: 100px;
 
     padding: 24px 19px;
+
+    border-width: 8px;
   }
 }
 
@@ -107,6 +135,8 @@
 
 .help-item__img {
   width: 100%;
+  background-color: rgba(255, 193, 88, 1);
+  border-radius: 50%;
 }
 
 .help-item__text {
@@ -118,6 +148,17 @@
   text-align: center;
 
   max-width: 400px;
+
+  @include for-size(tablet) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+
+    padding-left: 80px;
+    // padding-right: 80px;
+    margin-right: 35px;
+  }
 }
 
 .help-btn-block {
@@ -152,5 +193,12 @@
   }
   @include for-size(tablet) {
     margin-top: 30px;
+  }
+
+  transition: all 250ms $cubic-bezier;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
