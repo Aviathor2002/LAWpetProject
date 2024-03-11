@@ -1,4 +1,4 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <form action="" class="modal-form">
       <h2 class="modal-form__title">
@@ -9,21 +9,24 @@
           <input
             type="text"
             name="username"
+            placeholder="Имя, Фамилия"
             class="modal-form__input modal-form__input-name"
           />
         </label>
-        <div class="modal-form__input-container-block">
-          <label class="modal-form__label modal-form__label-tel">
-            <input
-              type="tel"
-              name="tel"
-              class="modal-form__input modal-form__input-name"
-            />
-          </label>
+        <div class="modal-form__input-contact-block">
           <label class="modal-form__label modal-form__label-email">
             <input
               type="email"
               name="email"
+              placeholder="Э-почта"
+              class="modal-form__input modal-form__input-name"
+            />
+          </label>
+          <label class="modal-form__label modal-form__label-tel">
+            <input
+              type="tel"
+              name="tel"
+              placeholder="Номер телефона"
               class="modal-form__input modal-form__input-name"
             />
           </label>
@@ -32,18 +35,29 @@
           <textarea
             name="describe"
             rows="10"
-            class="modal-form__input modal-form__input-name"
+            placeholder="Описание проблемы"
+            class="modal-form__input modal-form__input-problem"
           ></textarea>
         </label>
       </div>
-      <label class="modal-form__chekbox">
-        <input class="modal-form__chekbox-input" type="checkbox" name="rules" />
-        Согласен с правилами сотрудничества
-      </label>
-      <label class="modal-form__chekbox">
-        <input class="modal-form__chekbox-input" type="checkbox" name="news" />
-        Согласен получать новости по э-почте
-      </label>
+      <div class="modal-form__chekbox-box">
+        <label class="modal-form__chekbox">
+          <input
+            class="modal-form__chekbox-input"
+            type="checkbox"
+            name="rules"
+          />
+          Согласен с правилами сотрудничества
+        </label>
+        <label class="modal-form__chekbox">
+          <input
+            class="modal-form__chekbox-input"
+            type="checkbox"
+            name="news"
+          />
+          Согласен получать новости по э-почте
+        </label>
+      </div>
       <p class="modal-form__text">
         Мы используем ваши персональные данные, чтобы посредством настоящего
         веб-сайта информировать вас и лучшим образом представить наши услуги, а
@@ -51,10 +65,11 @@
       </p>
       <button class="modal-form__button" type="submit">Оставить заявку</button>
     </form>
-    <button type="button" class="modal--close">
+    <button type="button" class="modal--close" data-modal-close>
       <svg class="modal__icon--close" width="31" height="31">
         <use href="./images/svg/sprite.svg#icon-close "></use>
       </svg>
     </button>
   </div>
 </div>
+<script src="./js/modal.js"></script>
