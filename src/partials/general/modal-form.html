@@ -1,53 +1,47 @@
-<div class="backdrop is-hidden">
+<div class="backdrop">
   <div class="modal">
     <form action="" class="modal-form">
       <h2 class="modal-form__title">
         Заполни эту форму и получи ответ в течении трёх дней
       </h2>
-      <label class="modal-form__label modal-form__label-name">
-        <input
-          type="text"
-          name="username"
-          class="modal-form__input modal-form__input-name"
-        />
-      </label>
-      <label class="modal-form__label modal-form__label-tel">
-        <input
-          type="tel"
-          name="tel"
-          class="modal-form__input modal-form__input-name"
-        />
-      </label>
-      <label class="modal-form__label modal-form__label-email">
-        <input
-          type="email"
-          name="email"
-          class="modal-form__input modal-form__input-name"
-        />
-      </label>
-      <label class="modal-form__label modal-form__label-problem">
-        <textarea
-          name="describe"
-          rows="10"
-          class="modal-form__input modal-form__input-name"
-        ></textarea>
-      </label>
+      <div class="modal-form__input-container">
+        <label class="modal-form__label modal-form__label-name">
+          <input
+            type="text"
+            name="username"
+            class="modal-form__input modal-form__input-name"
+          />
+        </label>
+        <div class="modal-form__input-container-block">
+          <label class="modal-form__label modal-form__label-tel">
+            <input
+              type="tel"
+              name="tel"
+              class="modal-form__input modal-form__input-name"
+            />
+          </label>
+          <label class="modal-form__label modal-form__label-email">
+            <input
+              type="email"
+              name="email"
+              class="modal-form__input modal-form__input-name"
+            />
+          </label>
+        </div>
+        <label class="modal-form__label modal-form__label-problem">
+          <textarea
+            name="describe"
+            rows="10"
+            class="modal-form__input modal-form__input-name"
+          ></textarea>
+        </label>
+      </div>
       <label class="modal-form__chekbox">
-        <input
-          class="modal-form__chekbox-input"
-          type="checkbox"
-          name="hobby"
-          value="music"
-        />
+        <input class="modal-form__chekbox-input" type="checkbox" name="rules" />
         Согласен с правилами сотрудничества
       </label>
       <label class="modal-form__chekbox">
-        <input
-          class="modal-form__chekbox-input"
-          type="checkbox"
-          name="hobby"
-          value="music"
-        />
+        <input class="modal-form__chekbox-input" type="checkbox" name="news" />
         Согласен получать новости по э-почте
       </label>
       <p class="modal-form__text">
@@ -57,5 +51,10 @@
       </p>
       <button class="modal-form__button" type="submit">Оставить заявку</button>
     </form>
+    <button type="button" class="modal--close">
+      <svg class="modal__icon--close" width="31" height="31">
+        <use href="./images/svg/sprite.svg#icon-close "></use>
+      </svg>
+    </button>
   </div>
 </div>

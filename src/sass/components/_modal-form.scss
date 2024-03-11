@@ -1,0 +1,110 @@
+.backdrop {
+  position: fixed;
+  z-index: 2;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 15px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+
+  transition: opacity 250ms $cubic-bezier, visibility 250ms $cubic-bezier;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  max-width: 636px;
+  width: 100%;
+  height: 650px;
+
+  //   @include for-size(desktop) {
+  //     max-width: 528px;
+  //     height: 581px;
+  //   }
+
+  background: $primary-white-color;
+  box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+
+  padding: 40px 50px 40px 50px;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform 250ms $cubic-bezier;
+}
+
+.modal-form {
+}
+.modal-form__title {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #ffc158;
+
+  margin-bottom: 26px;
+}
+.modal-form__label {
+}
+.modal-form__label-name {
+}
+.modal-form__input {
+}
+.modal-form__input-name {
+}
+.modal-form__label-tel {
+}
+.modal-form__label-email {
+}
+.modal-form__label-problem {
+}
+.modal-form__chekbox {
+}
+.modal-form__chekbox-input {
+}
+.modal-form__text {
+}
+.modal-form__button {
+}
+
+.modal--close {
+  //   position: absolute;
+  //   top: 11px;
+  //   right: 7px;
+
+  width: 62px;
+  height: 62px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: fill 250ms $cubic-bezier, transform 250ms $cubic-bezier;
+
+  &:hover {
+    transform: scale(1.2);
+    fill: $primary-white-color;
+  }
+}
